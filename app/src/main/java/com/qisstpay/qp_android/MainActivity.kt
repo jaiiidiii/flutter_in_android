@@ -1,15 +1,15 @@
 package com.qisstpay.qp_android
-
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
+import com.google.android.material.snackbar.Snackbar
 import com.qisstpay.qp_android.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +29,11 @@ private lateinit var binding: ActivityMainBinding
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action JD", Snackbar.LENGTH_LONG)
+
+//            startActivity(
+//                FlutterActivity.createDefaultIntent(this)
+//            )
+            Snackbar.make(view, "HooHoa Replace with your own action JD", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
     }
